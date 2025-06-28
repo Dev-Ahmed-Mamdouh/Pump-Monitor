@@ -1,16 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.pumpmonitor.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="1150" prefHeight="750" style="-fx-background-color: #061423;">
+    <VBox spacing="10" layoutX="30" layoutY="20">
+        <!-- Top Labels -->
+        <GridPane hgap="15" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints minWidth="80"/>
+                <ColumnConstraints minWidth="300"/>
+            </columnConstraints>
+            <RowConstraints minHeight="30" />
+            <Label text="LABEL:" textFill="#fefbd8" style="-fx-font-size: 18;"/>
+            <TextField fx:id="labelField"/>
+            <Label text="COUNTER:" textFill="#fefbd8" style="-fx-font-size: 18;"/>
+            <TextField fx:id="counterField"/>
+            <Label text="DATE:" textFill="#fefbd8" style="-fx-font-size: 18;"/>
+            <TextField fx:id="dateField"/>
+            <Label text="TIME:" textFill="#fefbd8" style="-fx-font-size: 18;"/>
+            <TextField fx:id="timeField"/>
+        </GridPane>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+        <!-- Table Header -->
+        <HBox spacing="50" layoutY="80">
+            <Label text="" minWidth="70"/>
+            <Label text="Phase 1 Current" textFill="#FDFDFD" style="-fx-font-size: 16;" />
+            <Label text="Phase 3 Current" textFill="#FDFDFD" style="-fx-font-size: 16;" />
+            <Label text="Pump Body Temperature" textFill="#FDFDFD" style="-fx-font-size: 16;" />
+            <Label text="Delivery Pressure" textFill="#FDFDFD" style="-fx-font-size: 16;" />
+            <Label text="Pump Vibration" textFill="#FDFDFD" style="-fx-font-size: 16;" />
+        </HBox>
+
+        <!-- Pump Rows -->
+        <VBox spacing="30">
+            <fx:repeat items="${FXCollections.observableArrayList('Pump 1','Pump 2','Pump 3')}" var="pump">
+                <HBox spacing="50">
+                    <Label text="${pump}" textFill="#00BCD4" style="-fx-font-size: 18;" minWidth="70"/>
+                    <fx:repeat items="${FXCollections.observableArrayList('A','A','°C','bar','G')}" var="unit">
+                        <StackPane prefWidth="80" prefHeight="80" styleClass="gauge">
+                            <VBox alignment="CENTER">
+                                <Label text="${unit}" textFill="#CCCCCC" style="-fx-font-size: 14;" />
+                                <Label text="0" textFill="#FFFFFF" style="-fx-font-size: 20;" />
+                            </VBox>
+                        </StackPane>
+                    </fx:repeat>
+                </HBox>
+            </fx:repeat>
+        </VBox>
+    </VBox>
+
+    <!-- Sewage Tank Level -->
+    <VBox layoutX="1000" layoutY="100" spacing="5" alignment="BOTTOM_CENTER">
+        <Label text="Sewage Tank\nLevel" textFill="#FDFDFD" style="-fx-font-size: 18;" textAlignment="CENTER"/>
+        <VBox fx:id="sewageTank" prefWidth="60" prefHeight="250" style="-fx-background-color: linear-gradient(to top, #911b5b 0%, #003b5c 100%); border-radius: 10;">
+            <!-- Colored levels simulated by CSS later -->
+        </VBox>
+        <VBox spacing="5">
+            <Label text="6" textFill="#FFFFFF"/>
+            <Label text="5" textFill="#FFFFFF"/>
+            <Label text="4" textFill="#FFFFFF"/>
+            <Label text="3" textFill="#FFFFFF"/>
+            <Label text="2" textFill="#FFFFFF"/>
+            <Label text="1" textFill="#FFFFFF"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

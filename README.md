@@ -1,4 +1,5 @@
 # Pump Monitor
+<<<<<<< HEAD
 **Slogan**: Real‑Time Data. Reliable Storage 
 
 **Logo**: <p align="center">
@@ -83,3 +84,9 @@ Pump Monitor provides live pump data with secure storage, ensuring instant insig
 
 🎨 UI/UX Enhancements & User Experience Design
 
+=======
+**Slogan**: _"Where Connections Come Alive"_  
+**Logo**: ![Logo](Pump-Monitor\src\main\resources\images\Logo.png)
+## Overview
+Developed a Java desktop application to monitor various industrial systems by displaying real-time sensor data from Arduino and storing it in a database for analysis and record-keeping.
+>>>>>>> 0de38c4 (add UI)
