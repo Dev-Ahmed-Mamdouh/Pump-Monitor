@@ -1,6 +1,5 @@
 # Pump Monitor
-<<<<<<< HEAD
-**Slogan**: Real‑Time Data. Reliable Storage 
+**Slogan**: Real‑Time Data. Reliable Storage. 
 
 **Logo**: <p align="center">
             <img src="Pump-Monitor/src/main/resources/images/Logo.png" alt="Logo" width="300">
@@ -10,6 +9,8 @@
 
 ## 🔹 About the Project
 **Pump Monitor** is a Java desktop application to monitor various industrial systems by displaying real-time sensor data from Arduino and storing it in a database for analysis and record-keeping.
+
+
 
 ### 📌 What does this project cover
 ✔ **JavaFX with FXML** for a responsive, user-friendly UI  
@@ -48,7 +49,7 @@ Easily extendable for trends, graphs, and predictive maintenance features using 
 
 ---
 
-## Missions
+## Mission
 
 Pump Monitor’s mission is to empower industrial operations with accurate real-time monitoring of pump performance by seamlessly integrating sensor data from microcontroller devices and storing it securely in a robust database system. Our goal is to enable informed decisions, prevent equipment failure, and maximize operational efficiency.
 
@@ -80,13 +81,14 @@ Pump Monitor provides live pump data with secure storage, ensuring instant insig
 | **Project Management**   | Maven       |
 | **Version Control**      | Git & GitHub|
 
+               <p align="center">
+                <img src="UI/Pump Monitor.png" alt="Screen Shot" width="500">
+            </p>
+
 ---
 
-🎨 UI/UX Enhancements & User Experience Design
+## 💻 User Interface
+            ![Sign Up 1](UI/Pump Monitor.png)
 
-=======
-**Slogan**: _"Where Connections Come Alive"_  
-**Logo**: ![Logo](Pump-Monitor\src\main\resources\images\Logo.png)
-## Overview
-Developed a Java desktop application to monitor various industrial systems by displaying real-time sensor data from Arduino and storing it in a database for analysis and record-keeping.
->>>>>>> 0de38c4 (add UI)
+
+
