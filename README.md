@@ -1,6 +1,8 @@
 # Pump Monitor
 **Slogan**: _"Where Connections Come Alive"_  
-**Logo**: ![Logo](Pump-Monitor/src/main/resources/images/Logo.png)
+**Logo**: <p align="center">
+            <img src="Pump-Monitor/src/main/resources/images/Logo.png" alt="Logo" width="350">
+          </p>  
 
 
 ## Overview
