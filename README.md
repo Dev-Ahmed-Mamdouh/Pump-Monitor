@@ -49,21 +49,22 @@ Easily extendable for trends, graphs, and predictive maintenance features using 
 
 ---
 
-## Mission
+## 💡Mission
 
 Pump Monitor’s mission is to empower industrial operations with accurate real-time monitoring of pump performance by seamlessly integrating sensor data from microcontroller devices and storing it securely in a robust database system. Our goal is to enable informed decisions, prevent equipment failure, and maximize operational efficiency.
 
 ---
 
-## Vision
+## 🎯Vision
 
 Pump Monitor’s vision is to become the industry standard for pump monitoring solutions by delivering intuitive, scalable, and data-driven insights—ensuring reliability, safety, and sustainability across water management and industrial systems worldwide.
 
 ---
 
-## Slogan
+## 🗣️Slogan
 
 **Real‑Time Data. Reliable Storage** 
+
 Pump Monitor provides live pump data with secure storage, ensuring instant insights and long-term reliability.
 
 
@@ -81,14 +82,18 @@ Pump Monitor provides live pump data with secure storage, ensuring instant insig
 | **Project Management**   | Maven       |
 | **Version Control**      | Git & GitHub|
 
-               <p align="center">
-                <img src="UI/Pump Monitor.png" alt="Screen Shot" width="500">
-            </p>
-
 ---
 
 ## 💻 User Interface
-            ![Sign Up 1](UI/Pump Monitor.png)
 
 
+<p align="center">
+ <img src="UI/Pump Monitor.png" alt="Screen Shot">
+</p>
+
+---
+## 🙏 Thank You
+
+Thank you for taking the time to view this project!
+ 
 
